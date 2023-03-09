@@ -18,7 +18,7 @@ async function run(map) {
   setTimeout(run, 15000);
 }
 
-// Request bus location data from MBTA
+// Request MTA bus location data from MBTA
 async function getBusLocations() {
   const url = "https://api-v3.mbta.com/vehicles?filter[route]=1&include=trip";
   const response = await fetch(url);
